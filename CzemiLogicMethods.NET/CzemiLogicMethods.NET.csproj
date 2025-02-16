@@ -1,18 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <SqlQueryToolsConnectionString />
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Czemi C Type Logic Extensions</Title>
+    <VersionPrefix>1.0.1</VersionPrefix>
     <Authors>Ssemakula Mukiibi</Authors>
     <Company>Czemi</Company>
-    <Description>Extension methods to add C type Logic to some common type</Description>
+    <Description>Extension methods to add C type Logic to some common types</Description>
     <Copyright>Copyright (c) Ssemakula Mukiibi</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Ssemakula/CzemiLogicMethods.NET</RepositoryUrl>
+    <PackageTags>C; Logic Extensions; IsTrue;</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackAsTool>True</PackAsTool>
+    <PackageIcon>Czemi_Maissan128.png</PackageIcon>
+    <ApplicationIcon>Czemi_Maissan128.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -24,6 +31,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Czemi_Maissan128.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Builds\Icons\Czemi_Maissan128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
